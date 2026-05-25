@@ -3,7 +3,14 @@
   "name": "youtube-shorts-community-blocker",
   "version": "1.0",
   "description": "Hides YouTube Shorts and Community Posts",
-
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@extension-youtube-shorts-community-blocker",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "permissions": ["https://www.youtube.com/*"],
 
   "content_scripts": [
