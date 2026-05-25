@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "youtube-shorts-community-blocker",
+  "version": "1.0",
+  "description": "Hides YouTube Shorts and Community Posts",
+
+  "permissions": ["https://www.youtube.com/*"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
